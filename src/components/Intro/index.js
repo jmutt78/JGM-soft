@@ -2,7 +2,6 @@ import React from "react";
 
 import Profile from "../Images/Profile.js";
 import Purple from "../../../assets/city.svg";
-import justin from "../../images/JustinM.png";
 
 import {
   Root,
@@ -24,7 +23,7 @@ export default () => (
             because I love them.
           </h2>
           <ImageContainer>
-            <img src={justin} alt="Justin McIntosh profile" />
+            <Profile />
           </ImageContainer>
         </Column>
       </Container>

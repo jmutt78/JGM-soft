@@ -9,8 +9,8 @@ svg {
   width: 1300px;
   margin-left auto;
   margin-right: auto;
-}
 
+}
 @media (max-width: 500px) {
   margin-bottom: -30px;
 }
@@ -76,9 +76,8 @@ export const ImageContainer = styled.div`
   padding-top: 25px;
   img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 300px;
+    height: auto;
   }
 
   @media (max-width: 500px) {
@@ -86,9 +85,7 @@ export const ImageContainer = styled.div`
       border-radius: 50%;
       width: 50%;
       height: auto;
-      object-fit: cover;
     }
-
 `;
 export const IconContainer = styled.div`
   display: flex;
