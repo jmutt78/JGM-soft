@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const SVGContainer = styled.div`
 overflow-x: hidden;
+
 svg {
   display: flex;
   height: auto;
   width: 1300px;
   margin-left auto;
   margin-right: auto;
+}
 
+@media (max-width: 500px) {
+  margin-bottom: -30px;
 }
 `;
 
@@ -82,6 +86,7 @@ export const ImageContainer = styled.div`
       width: 50%;
       height: auto;
     }
+
 `;
 export const IconContainer = styled.div`
   display: flex;
