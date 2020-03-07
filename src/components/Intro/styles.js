@@ -76,8 +76,9 @@ export const ImageContainer = styled.div`
   padding-top: 25px;
   img {
     border-radius: 50%;
-    width: 300px;
-    height: auto;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
   }
 
   @media (max-width: 500px) {
@@ -85,6 +86,7 @@ export const ImageContainer = styled.div`
       border-radius: 50%;
       width: 50%;
       height: auto;
+      object-fit: cover;
     }
 
 `;
