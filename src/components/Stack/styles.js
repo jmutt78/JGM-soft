@@ -20,7 +20,7 @@ export const SkillsContainer2 = styled.div`
     text-align: center;
   }
   svg {
-    height: 100px;
+    height: 70px;
     width: auto;
     margin-bottom: 20px;
     filter: invert(6%) sepia(57%) saturate(5533%) hue-rotate(257deg)
@@ -38,14 +38,13 @@ export const SkillsContainer2 = styled.div`
 
   @media (max-width: 800px) {
     display: block;
-    width: 50%;
   }
 `;
 
 export const SkillsColumn = styled.div`
   display: block;
   justify-content: center;
-  width: 70%;
+  width: 250px;
 
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -60,9 +59,13 @@ export const SkillsColumn = styled.div`
   }
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
     :hover {
-      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0px;
     }
   }
 `;

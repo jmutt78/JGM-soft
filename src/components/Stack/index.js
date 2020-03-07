@@ -18,50 +18,22 @@ const Work = () => {
     {
       image: <Front />,
       title: "FRONT END",
-      body: (
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3 SASS</li>
-          <li>JavaScript</li>
-          <li>React Redux GraphQl </li>
-        </ul>
-      )
+      body: ["React", "Redux", "Apollo", "SSR"]
     },
     {
       image: <Server />,
       title: "SERVER",
-      body: (
-        <ul>
-          <li>NodeJS</li>
-          <li>Express</li>
-          <li>GraphQl</li>
-          <li>PHP</li>
-        </ul>
-      )
+      body: ["NodeJS", "Express", "GraphQl", "PHP"]
     },
     {
       image: <Data />,
       title: "DATABASE",
-      body: (
-        <ul>
-          <li>PostgreSQL</li>
-          <li>mySQL</li>
-          <li>MongoDB</li>
-          <li>Cassandra</li>
-        </ul>
-      )
+      body: ["PostgreSQL", "mySQL", "MongoDB", "Cassandra"]
     },
     {
       image: <Cloud />,
       title: "DEPLOYMENT",
-      body: (
-        <ul>
-          <li>System Design</li>
-          <li>AWS ECS SQS</li>
-          <li>Docker</li>
-          <li>Git</li>
-        </ul>
-      )
+      body: ["Netlify", "AWS", "Docker", "Git"]
     }
   ];
 
@@ -72,7 +44,11 @@ const Work = () => {
           <SkillsColumn key={title}>
             {image}
             <h4>{title}</h4>
-            <div>{body}</div>
+            <ul>
+              {body.map(body => {
+                return <li>{body}</li>;
+              })}
+            </ul>
           </SkillsColumn>
         ))}
       </SkillsContainer2>
