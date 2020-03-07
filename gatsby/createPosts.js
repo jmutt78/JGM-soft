@@ -1,4 +1,4 @@
-const path = require(`path`)
+const path = require(`path`);
 module.exports = async ({ actions, graphql }) => {
   const GET_POSTS = `
 query GET_POSTS($first: Int $after: String){
@@ -7,7 +7,7 @@ posts(
 first: $first
 after: $after
 where: {
-  categoryName: "my story"
+  categoryName: "jgm"
 }
 ) {
   pageInfo {
@@ -27,12 +27,12 @@ where: {
 }
 }
 }
-`
+`;
 
-  const { createPage } = actions
-  const allPosts = []
-  const blogPages = []
-  let pageNumber = 0
+  const { createPage } = actions;
+  const allPosts = [];
+  const blogPages = [];
+  let pageNumber = 0;
 
   const fetchPages = async varables =>
     await graphql(GET_POSTS, varables).then(({ data }) => {
@@ -40,14 +40,14 @@ where: {
         wpgraphql: {
           posts: {
             nodes,
-            pageInfo: { hasNextPage, endCursor },
-          },
-        },
-      } = data
+            pageInfo: { hasNextPage, endCursor }
+          }
+        }
+      } = data;
 
-      const nodeIds = nodes.map(node => node.postId)
-      const postsTemplate = path.resolve(`./src/templates/posts.js`)
-      const postsPath = !varables.after ? `/blog/` : `/blog/page/${pageNumber}`
+      const nodeIds = nodes.map(node => node.postId);
+      const postsTemplate = path.resolve(`./src/templates/posts.js`);
+      const postsPath = !varables.after ? `/blog/` : `/blog/page/${pageNumber}`;
 
       blogPages[pageNumber] = {
         path: postsPath,
@@ -55,36 +55,36 @@ where: {
         context: {
           ids: nodeIds,
           pageNumber,
-          hasNextPage,
+          hasNextPage
         },
-        ids: nodeIds,
-      }
+        ids: nodeIds
+      };
 
       nodes.map(post => {
-        allPosts.push(post)
-      })
+        allPosts.push(post);
+      });
       if (hasNextPage) {
-        pageNumber++
-        return fetchPages({ first: 12, after: endCursor })
+        pageNumber++;
+        return fetchPages({ first: 12, after: endCursor });
       }
-      return allPosts
-    })
+      return allPosts;
+    });
 
   await fetchPages({ first: 12, after: null }).then(allPosts => {
-    const postTemplate = path.resolve(`./src/templates/post.js`)
+    const postTemplate = path.resolve(`./src/templates/post.js`);
 
     blogPages.map(page => {
-      console.log(`create post list: ${page.path}`)
-      createPage(page)
-    })
+      console.log(`create post list: ${page.path}`);
+      createPage(page);
+    });
 
     allPosts.map(post => {
-      console.log(`create page: ${post.uri}`)
+      console.log(`create page: ${post.uri}`);
       createPage({
         path: `/${post.uri}`,
         component: postTemplate,
-        context: post,
-      })
-    })
-  })
-}
+        context: post
+      });
+    });
+  });
+};

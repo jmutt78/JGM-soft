@@ -5,6 +5,7 @@ export const Root = styled.div`
   flex-grow: 1;
   flex-shrink: 0;
   padding: 0rem 1.5rem;
+  padding-top: 30px;
   padding-bottom: 150px;
   @media (max-width: 800px) {
     width: 100%;

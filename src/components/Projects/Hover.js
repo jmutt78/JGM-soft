@@ -83,7 +83,8 @@ const Hovers = ({ image, title, body, stack, url, git }) => {
           <Hover>
             <BigTitle>{title}</BigTitle>
             <SubTitle>{body}</SubTitle>
-            <Paragraph>Stack: {stack}</Paragraph>
+            <Paragraph>Stack:</Paragraph>
+            <p>{stack}</p>
             <CTA>
               <div>
                 <Button href={url} target="_blank" rel="noopener noreferrer">

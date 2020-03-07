@@ -1,7 +1,7 @@
 import React from "react";
 
 import WebCoding from "../../../assets/web-coding.svg";
-import Concept from "../../../assets/concept.svg";
+import Concept from "../../../assets/processor.svg";
 
 import { Root, Column, BoxLeft, BoxRight, BoxContainer } from "./styles";
 
@@ -13,30 +13,34 @@ export default () => (
           <WebCoding
             style={{ height: "80px", width: "auto", marginBottom: "20px" }}
           />
-          <h3>Full-Stack Developer</h3>
-          <p>I love to create things, and enjoy bringing ideas to life.</p>
+          <h3>Web Development</h3>
+          <p>
+            I create scalable web applications with a range of technologies,
+            including React and Node, to utilize the best tools for your
+            application.
+          </p>
 
           <p className="p-title">Services:</p>
           <ul>
-            <li>Website Development</li>
+            <li>Website Design</li>
             <li>Web Application Development</li>
-            <li>Mobile Application Development</li>
           </ul>
         </BoxLeft>
         <BoxRight>
           <Concept
             style={{ height: "80px", width: "auto", marginBottom: "20px" }}
           />
-          <h3>Entrepreneur</h3>
+          <h3>Mobile Development</h3>
           <p>
-            I genuinely care about people and love helping fellow entrepreneurs.
+            I design and build iOS, Android, and cross-platform React Native
+            apps for startups and established businesses.
           </p>
 
-          <p className="p-title">Experience:</p>
+          <p className="p-title">Platforms:</p>
           <ul>
-            <li>3 years Developer</li>
-            <li>13 Years in Entrepreneurship</li>
-            <li>2 Startups</li>
+            <li>IOS</li>
+            <li>Android</li>
+            <li>React Native</li>
           </ul>
         </BoxRight>
       </BoxContainer>
