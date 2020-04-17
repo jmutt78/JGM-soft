@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Matti D",
       body: "A business website for a retail boutique in Del Mar, CA.",
       url: "https://mattidstyle.com",
-      stack: "Wordpress"
+      stack: "Shopify"
     },
     {
       image: docusite,
