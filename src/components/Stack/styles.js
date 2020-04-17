@@ -6,7 +6,7 @@ export const Root = styled.div`
   flex-shrink: 0;
   padding: 0rem 1.5rem;
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 30px;
   @media (max-width: 800px) {
     width: 100%;
   }
@@ -44,7 +44,7 @@ export const ServiceContainer = styled(Col)`
 export const ServiceCard = styled(Card)`
   margin-bottom: 30px;
   svg {
-    height: 40px;
+    height: 50px;
     width: auto;
     margin-bottom: 20px;
   }

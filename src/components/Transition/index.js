@@ -6,7 +6,7 @@ export default () => (
     <Container>
       <Column>
         <div>
-          <h2>My Projects</h2>
+          <h2>Current Projects</h2>
         </div>
       </Column>
     </Container>

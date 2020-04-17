@@ -20,7 +20,6 @@ const IndexPage = () => (
     <Skill />
     <Services />
     <Work />
-
     <Transition />
     <Projects />
 

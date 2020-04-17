@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import Shopify from "../../../assets/shopify.svg";
 import MVP from "../../../assets/mvp.svg";
-import Web from "../../../assets/webdev.svg";
+import Web from "../../../assets/web-coding.svg";
 import Rech from "../../../assets/rech.svg";
 import No from "../../../assets/node.svg";
 import Graph from "../../../assets/graphql.svg";
@@ -44,7 +44,7 @@ const Work = () => {
     {
       image: <No />,
       title: "Node.js",
-      body: `I build modern, scalable, real-time, APIs using Express and easy to set up fully-featured Node.js GraphQL server platform.`
+      body: `I build modern, scalable, real-time, APIs using Express and easy to set up fully-featured Node.js server platform.`
     },
     {
       image: <Graph />,
