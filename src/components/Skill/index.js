@@ -19,12 +19,6 @@ export default () => (
             including React and Node, to utilize the best tools for your
             application.
           </p>
-
-          <p className="p-title">Services:</p>
-          <ul>
-            <li>Website Design</li>
-            <li>Web Application Development</li>
-          </ul>
         </BoxLeft>
         <BoxRight>
           <Concept
@@ -35,13 +29,6 @@ export default () => (
             I design and build iOS, Android, and cross-platform React Native
             apps for startups and established businesses.
           </p>
-
-          <p className="p-title">Platforms:</p>
-          <ul>
-            <li>IOS</li>
-            <li>Android</li>
-            <li>React Native</li>
-          </ul>
         </BoxRight>
       </BoxContainer>
     </Column>

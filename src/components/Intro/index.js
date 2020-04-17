@@ -17,11 +17,10 @@ export default () => (
     <Root>
       <Container>
         <Column>
-          <h1>Software Developer</h1>
-
+          <h1>Your Trusted Partner in Software Development</h1>
           <h2>
-            I build beautiful, functional websites and products for businesses
-            because I love them.
+            I build beautiful, functional websites and applications for
+            businesses because I love them.
           </h2>
           <ImageContainer>
             <img src={justin} alt="Justin McIntosh profile" />
