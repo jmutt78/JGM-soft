@@ -76,8 +76,8 @@ export const ImageContainer = styled.div`
   padding-top: 25px;
   img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
 
   @media (max-width: 500px) {
