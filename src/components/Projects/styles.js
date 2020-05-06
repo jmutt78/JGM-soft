@@ -47,7 +47,7 @@ export const SkillsColumn = styled.div`
 
   h4 {
     line-height: 1.5;
-    font-size: 1rem !important;
+    font-size: 0.7rem !important;
     color: white;
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;

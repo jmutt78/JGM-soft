@@ -7,6 +7,8 @@ import hike from "../../images/hike.jpg";
 import docusite from "../../images/docusite.jpg";
 import journal from "../../images/journal.jpg";
 import entra from "../../images/mountain.jpg";
+import ihmo from "../../images/ihmo.jpg";
+import tamilee from "../../images/tamilee.png";
 import { Root, SkillsContainer, SkillsColumn } from "./styles";
 
 const Projects = () => {
@@ -22,9 +24,17 @@ const Projects = () => {
     {
       image: mattid,
       title: "Matti D",
-      body: "A business website for a retail boutique in Del Mar, CA.",
+      body: "An e-commerce website for a retail boutique.",
       url: "https://mattidstyle.com",
       stack: "Shopify"
+    },
+    {
+      image: ihmo,
+      title: "Integrative Health Management",
+      body:
+        "An informational business website that allows users to book appointments, download forms, and watch informative videos.",
+      url: "https://adrianak.netlify.app/",
+      stack: "Gatsby.Js, Wordpress headless CMS"
     },
     {
       image: docusite,
@@ -32,6 +42,13 @@ const Projects = () => {
       body: "A business website for a construction application.",
       url: "https://docusites.com",
       stack: "Wordpress"
+    },
+    {
+      image: tamilee,
+      title: "Webb Workouts",
+      body: `A website for Tamilee Webb of the "Buns of Steel" workout videos, featuring e-commerce, client booking, and email capture.`,
+      url: "https://tamilleew.netlify.app/",
+      stack: "Gatsby.Js, Wordpress headless CMS"
     },
     {
       image: journal,
