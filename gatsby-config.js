@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 const wordpressUrl = `https://entra.flywheelsites.com/graphql`;
 
 module.exports = {
@@ -17,6 +21,14 @@ module.exports = {
         typeName: `WPGraphql`,
         fieldName: `wpgraphql`,
         url: wordpressUrl
+      }
+    },
+    {
+      resolve: "gatsby-plugin-hubspot",
+      options: {
+        trackingCode: `${process.env.GATSBY_HUBSPOT}`,
+        respectDNT: true,
+        productionOnly: true
       }
     },
     {
