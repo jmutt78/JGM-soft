@@ -79,7 +79,7 @@ export const ImageContainer = styled.div`
     width: 200px;
     height: 200px;
     object-fit: cover;
-
+  }
   @media (max-width: 500px) {
     img {
       border-radius: 50%;
@@ -87,6 +87,19 @@ export const ImageContainer = styled.div`
       height: 150px;
       object-fit: cover;
     }
+  }
+`;
+
+export const LandingImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 800px;
+    object-fit: cover;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 export const IconContainer = styled.div`
   display: flex;
