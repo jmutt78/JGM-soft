@@ -54,7 +54,7 @@ const IndexPage = () => (
     <Projects />
 
     <Startup />
-    <Testimonials />
+
   </Layout>
 );
 
