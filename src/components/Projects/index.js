@@ -43,13 +43,7 @@ const Projects = () => {
       url: "https://docusites.com",
       stack: "Wordpress"
     },
-    {
-      image: tamilee,
-      title: "Webb Workouts",
-      body: `A website for Tamilee Webb of the "Buns of Steel" workout videos, featuring e-commerce, client booking, and email capture.`,
-      url: "https://tamilleew.netlify.app/",
-      stack: "Gatsby.Js, Wordpress headless CMS"
-    },
+
     {
       image: journal,
       title: "Daily Journal",
