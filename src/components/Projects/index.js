@@ -3,7 +3,7 @@ import React from 'react';
 import Hover from './Hover';
 
 import mattid from '../../images/mattid.jpg';
-import hike from '../../images/hike.jpg';
+import book from '../../images/book.jpg';
 import docusite from '../../images/docusite.jpg';
 import journal from '../../images/journal.jpg';
 import entra from '../../images/mountain.jpg';
@@ -45,6 +45,14 @@ const Projects = () => {
       url: 'https://docusites.com',
       stack: 'Wordpress',
     },
+    {
+      image: book,
+      title: 'Sontera Group',
+      body: `An informational business website for an amazing local bookkeeper.`,
+      url: 'https://sonteragroup.com/',
+      stack: 'HTML, CSS, Wordpress',
+      git: 'https://github.com/jmutt78/sonteragroup-wordpress',
+    },
 
     {
       image: journal,
@@ -54,14 +62,7 @@ const Projects = () => {
       stack: 'React, Redux, MongoDB, Express, NodeJS',
       git: 'https://github.com/jmutt78/15-Minute-Journal',
     },
-    {
-      image: hike,
-      title: 'Trail Finder API',
-      body: `Data populated and cached with REST API calls to trails database.`,
-      url: 'https://jmutt78.github.io/Hiking-API-Hack/',
-      stack: 'HTML, CSS, JavaScript, jQuery',
-      git: 'https://github.com/jmutt78/Hiking-API-Hack',
-    },
+
     {
       image: sharp,
       title: 'Sharp On-demand Video Doctor Visit',
