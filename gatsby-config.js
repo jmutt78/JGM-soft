@@ -32,6 +32,14 @@ module.exports = {
         url: wordpressUrl,
       },
     },
+    {
+      resolve: 'gatsby-plugin-hubspot',
+      options: {
+        trackingCode: `${process.env.GATSBY_HUBSPOT}`,
+        respectDNT: true,
+        productionOnly: true,
+      },
+    },
 
     {
       resolve: 'gatsby-plugin-react-svg',
