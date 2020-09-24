@@ -12,9 +12,7 @@ const GlobalStyles = createGlobalStyle`
   --tan: #fff5dd;
 }
 
-html {
-  background: var(--tan);
-}
+
 
 body {
   margin: 0;
@@ -34,10 +32,14 @@ body {
 body::-webkit-scrollbar {
   width: 13px;
 }
+
 html {
+  background: var(--tan);
   scrollbar-width: thin;
   scrollbar-color: var(--purple) var(--tan);
+
 }
+
 body::-webkit-scrollbar-track {
 
 }
