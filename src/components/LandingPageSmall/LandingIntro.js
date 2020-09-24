@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Work from "../../components/Work";
+import Work from '../../components/Work';
 
-import Idea from "../../../assets/idea.svg";
-import System from "../../../assets/innovation.svg";
-import Problem from "../../../assets/workflow.svg";
-import Organize from "../../../assets/man.svg";
+import Idea from '../../../assets/idea.svg';
+import System from '../../../assets/innovation.svg';
+import Problem from '../../../assets/workflow.svg';
+import Organize from '../../../assets/man.svg';
 
-import Profile from "../Images/Profile.js";
-import Purple from "../../../assets/city.svg";
-import website from "../../images/website.png";
-import bubble from "../../images/bubble.png";
+import Profile from '../Images/Profile.js';
+import Purple from '../../../assets/city.svg';
+import website from '../../images/website.png';
+import bubble from '../../images/bubble.png';
 
-import { Container, Col, Row, Image, Accordion, Card } from "react-bootstrap";
+import { Container, Col, Row, Image, Accordion, Card } from 'react-bootstrap';
 
 export const About = styled(Col)`
   p {
@@ -121,7 +121,6 @@ export const Column = styled.div`
   }
 
   h2 {
-    font-family: "europa", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;
@@ -138,7 +137,6 @@ export const Column = styled.div`
     }
 
     h2 {
-      font-family: "europa", sans-serif;
       font-weight: 300;
       line-height: 1.5;
       font-size: 1rem !important;
@@ -183,7 +181,7 @@ export default () => (
           </ul>
         </AboutContent>
       </AboutRow>
-      <div className="title">
+      <div className='title'>
         <h3>We got your back!</h3>
       </div>
     </Root>

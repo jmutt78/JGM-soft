@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   -webkit-box-flex: 1;
@@ -36,7 +36,7 @@ export const Column = styled.div`
   }
 
   h4 {
-    font-family: 'europa', sans-serif;
+
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;

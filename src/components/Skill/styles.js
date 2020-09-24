@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Root = styled.div`
   width: 100%;
@@ -7,7 +7,7 @@ export const Root = styled.div`
   align-items: center;
   padding: 0px 0px 50px 0px;
   margin-top: -130px;
-`
+`;
 
 export const Column = styled.div`
   display: flex;
@@ -25,7 +25,6 @@ export const Column = styled.div`
 }
   }
   h3 {
-    font-family: 'eurostile', sans-serif;
     font-weight: 800;
     color: #141c3a;
   }
@@ -45,7 +44,7 @@ export const Column = styled.div`
   @media (max-width: 500px) {
       padding: 0px 15px 0px 15px;
   }
-`
+`;
 export const BoxContainer = styled.div`
   background-color: #fff;
   border-radius: 6px;
@@ -58,7 +57,7 @@ export const BoxContainer = styled.div`
     display: grid;
     padding: 0;
   }
-`
+`;
 
 export const BoxLeft = styled.div`
   padding: 70px 45px;
@@ -72,7 +71,7 @@ export const BoxLeft = styled.div`
     border-bottom: 1px solid #e6ecf8;
     border-right: 0px;
   }
-`
+`;
 
 export const BoxRight = styled.div`
   padding: 70px 45px;
@@ -81,4 +80,4 @@ export const BoxRight = styled.div`
   -webkit-box-flex: 1;
   flex-grow: 1;
   flex-shrink: 1;
-`
+`;

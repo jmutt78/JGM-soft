@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Root = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const Root = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 130px;
-`
+`;
 
 export const Column = styled.div`
   display: flex;
@@ -29,7 +29,6 @@ export const Column = styled.div`
   }
 
   h4 {
-    font-family: 'europa', sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;
@@ -40,4 +39,4 @@ export const Column = styled.div`
     h4 {
       padding: 0px 15px 0px 15px;
     }
-`
+`;

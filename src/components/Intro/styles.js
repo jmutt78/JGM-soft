@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SVGContainer = styled.div`
 overflow-x: hidden;
@@ -43,7 +43,6 @@ export const Column = styled.div`
   }
 
   h2 {
-    font-family: "europa", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 1.25rem !important;
@@ -60,7 +59,6 @@ export const Column = styled.div`
     }
 
     h2 {
-      font-family: "europa", sans-serif;
       font-weight: 300;
       line-height: 1.5;
       font-size: 1rem !important;
