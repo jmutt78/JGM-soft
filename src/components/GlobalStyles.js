@@ -13,12 +13,12 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  background: --tan;
+  background: var(--tan);
 }
 
 body {
   margin: 0;
-  background: #fff5dd;
+  background: var(--tan);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: eurostile,sans-serif;
