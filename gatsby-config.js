@@ -7,6 +7,7 @@ const wordpressUrl = `https://entra.flywheelsites.com/graphql`;
 module.exports = {
   siteMetadata: {
     title: `Justin McIntosh`,
+    siteUrl: 'https://jgmsoft.io',
     description: `Justin McIntosh is a freelance developer and entreprenur. Book now!`,
     author: `Justin McIntosh`,
   },

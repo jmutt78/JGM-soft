@@ -20,12 +20,12 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <React.Fragment>
+    <>
       <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
 

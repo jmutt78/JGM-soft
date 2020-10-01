@@ -12,14 +12,16 @@ const GlobalStyles = createGlobalStyle`
   --tan: #fff5dd;
 }
 
-
-
-body {
+html {
   margin: 0;
-  background: var(--tan);
+  background: #fff5dd;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: eurostile,sans-serif;
+}
+
+body {
+  background-color: transparent;
 }
 
 
@@ -34,15 +36,11 @@ body::-webkit-scrollbar {
 }
 
 html {
-  background: var(--tan);
   scrollbar-width: thin;
   scrollbar-color: var(--purple) var(--tan);
-
 }
 
-body::-webkit-scrollbar-track {
 
-}
 body::-webkit-scrollbar-thumb {
   background-color: var(--purple) ;
   border-radius: 7px;
